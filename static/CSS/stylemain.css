@@ -1,0 +1,158 @@
+/*--------------configurações iniciais-------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*--------------header e suas configurações-------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding: 20px 25px;
+    background-color: #023F2A;
+    color: white;
+
+    & div {
+        display: flex;
+        flex: 1;
+        font-size: x-large;
+        align-items: center;
+        justify-content: space-around;
+
+        & a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+
+/*--------------Main e suas configurações-------------*/
+main {
+    background-image: radial-gradient(#c0DFD4 70%, #023F2A);
+}
+
+
+/*--------------Linha divisória e suas configurações-------------*/
+hr {
+    background-color: #023F2A;
+    height: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+/*--------------section 1 e suas configurações-------------*/
+div#section1 {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .profile {
+        display: flex;
+        flex-direction: column;
+
+        & h1 {
+            font-size: 40px;
+        }
+
+        & h1#name {
+            margin-bottom: 25px;
+        }
+
+        & a {
+            text-decoration: none;
+            font-size: 40px;
+            color: black;
+        }
+
+        & div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            & img {
+                width: 4%;
+                height: 4%;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    & img {
+        width: 25%;
+    }
+}
+
+
+/*--------------section 2, 3, 4 e suas configurações-------------*/
+div#section2, div#section3, div#section4, div#section5, div#section6{
+    padding: 30px 50px;
+    padding-top: 20px;
+
+    & h1 {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+
+
+    & li {
+        font-size: 30px;
+        margin-left: 35px;
+    }
+
+}
+
+
+/*--------------section 3, 4 e suas configurações a mais-------------*/
+div#section3, div#section4, div#section6 {
+    & li {
+        list-style-type: none;
+    }
+
+}
+
+div#section5, div#section6 {
+    & ul {
+        margin-bottom: 10px;
+    }
+
+    & .hab_comp {
+        display: flex;
+
+        & ul {
+            flex: 1;
+            padding-right: 50px;
+            margin-bottom: 0;
+        }
+
+        & hr {
+            background-image: linear-gradient(to right, #023F2A 40%, white 40%, white);
+            margin-right: 0;
+            border: 1.5px solid black;
+        }
+
+        & .idioma {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+/*--------------footer e suas configurações-------------*/
+footer {
+    background-color: rgb(173, 173, 173);
+    text-align: center;
+    padding: 10px;
+
+    & p {
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
